@@ -130,10 +130,18 @@ html[dir="rtl"] .marquee { animation-name: scroll-rtl; }
 .tags { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
 .tags li { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 999px; padding: 3px 12px; font-size: .82rem; color: var(--blue-700); }
 
-.project-thumb { height: 150px; border-radius: 10px; margin-bottom: 18px; display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 2rem; }
-.t1 { background: linear-gradient(135deg, #0b3a8c, #1f6feb); }
-.t2 { background: linear-gradient(135deg, #5b2bb5, #9b6bf2); }
-.t3 { background: linear-gradient(135deg, #0a7d6e, #27c5a8); }
+/* Featured project images */
+.project-thumb {
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  display: block;
+  padding: 0;
+}
 
 /* ---------- Tabs ---------- */
 .tab-list { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 26px; }
@@ -196,12 +204,16 @@ input:focus, textarea:focus { outline: none; border-color: var(--blue-500); box-
 .info-box li { margin-bottom: 10px; list-style: none; }
 .info-box ul { padding: 0; }
 
-/* ---------- Blog / jobs ---------- */
-.post-thumb { height: 130px; border-radius: 10px; background: linear-gradient(135deg, var(--blue-100), #cfe0ff); margin-bottom: 16px; }
-.job { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
-.job h3 { margin-bottom: .2em; }
-.job p { margin: 0; }
-
+/* Blog / Insights images */
+.post-thumb {
+  display: block;
+  width: calc(100% + 56px) !important;
+  max-width: none !important;
+  height: auto;
+  object-fit: unset;
+  margin: -28px -28px 18px;
+  border-radius: 14px 14px 10px 10px;
+}
 /* ---------- Footer ---------- */
 .site-footer { background: #061736; color: #b8c7e6; padding: 60px 0 0; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 32px; }
