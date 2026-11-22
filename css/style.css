@@ -342,3 +342,74 @@ html[dir="rtl"] body { font-family: "Segoe UI", Tahoma, "Noto Sans Arabic", Aria
   .wm-india { font-size: .82rem; }
   .logo-img { height: 40px; }
 }
+
+/* Technology Partners */
+.partner-grid {
+  align-items: stretch;
+}
+
+.partner-card {
+  min-height: 190px;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.partner-logo {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.partner-logo img {
+  display: block;
+  max-width: 175px;
+  max-height: 55px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.partner-card h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--blue-900);
+}
+
+.partner-card small {
+  display: block;
+  color: var(--muted);
+  font-size: .9rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.partner-card:hover .partner-logo img {
+  transform: scale(1.04);
+  transition: transform .25s ease;
+}
+
+@media (max-width: 600px) {
+  .partner-card {
+    min-height: 175px;
+  }
+
+  .partner-logo img {
+    max-width: 155px;
+    max-height: 50px;
+  }
+}
+.partner-card .partner-logo img.ibm-logo {
+  width: 180px;
+  max-width: 180px;
+  height: 75px;
+  max-height: 75px;
+  object-fit: contain;
+}
